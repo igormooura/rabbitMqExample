@@ -35,3 +35,15 @@ connectRabbitMQ();
 
 app.use(cors());
 app.use(express.json());
+
+app.post("/send", async(req, res) =>{
+    const {message} = req.body
+
+    try{
+        channel.sendToQueue(QUEUE, Buffer.from(message)); // envia pra fila
+        res.status.json({status: "Message sent"})
+    } catch (error) {
+        console.error("error:", error)
+    }
+});
+
