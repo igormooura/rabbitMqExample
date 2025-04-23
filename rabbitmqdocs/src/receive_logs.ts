@@ -11,13 +11,13 @@ amqp.connect('amqp://localhost', function(error0, connection) {
       throw error1;
     }
     var exchange = 'logs';
-
-    channel.assertExchange(exchange, 'fanout', {
+                                                
+    channel.assertExchange(exchange, 'fanout', { //fanout-> envia a mesma mensagem para todos os consumidores conectados, ignorando routing keys.
       durable: false
     });
 
     channel.assertQueue('', {
-      exclusive: true
+      exclusive: true           // cria uma fila temporária
     }, function(error2, q) {
       if (error2) {
         throw error2;
