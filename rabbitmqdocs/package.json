@@ -12,7 +12,9 @@
     "send": "ts-node src/send.ts",
     "receive": "ts-node src/receive.ts",
     "new_task": "ts-node src/new_task.ts",
-    "worker": "ts-node src/worker.ts"
+    "worker": "ts-node src/worker.ts",
+    "receive_logs": "ts-node src/receive_logs.ts",
+    "emit_logs": "ts-node src/emit_log.ts"
   },
   "dependencies": {
     "@types/amqplib": "^0.10.7",
