@@ -10,7 +10,9 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "send": "ts-node src/send.ts",
-    "receive": "ts-node src/receive.ts"
+    "receive": "ts-node src/receive.ts",
+    "new_task": "ts-node src/new_task.ts",
+    "worker": "ts-node src/worker.ts"
   },
   "dependencies": {
     "@types/amqplib": "^0.10.7",
