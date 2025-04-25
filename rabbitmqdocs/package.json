@@ -14,7 +14,9 @@
     "new_task": "ts-node src/WorkQueues/new_task.ts",
     "worker": "ts-node src/WorkQueues/worker.ts",
     "receive_logs": "ts-node src/PubSub/receive_logs.ts",
-    "emit_logs": "ts-node src/PubSub/emit_log.ts"
+    "emit_logs": "ts-node src/PubSub/emit_log.ts",
+    "emit_log_direct": "ts-node src/Routing/emit_log_direct.ts",
+    "receive_logs_direct": "ts-node src/Routing/receive_logs_direct.ts"
   },
   "dependencies": {
     "@types/amqplib": "^0.10.7",

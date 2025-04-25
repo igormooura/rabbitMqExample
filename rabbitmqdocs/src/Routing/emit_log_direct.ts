@@ -33,8 +33,5 @@ amqp.connect('amqp://localhost', function(error0, connection){
         console.log("Sent: ", severity, msg)
     });
 
-    setTimeout(function() {
-        connection.close();
-        process.exit(0)
-      }, 500);
+    
 })
