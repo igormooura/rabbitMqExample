@@ -16,7 +16,9 @@
     "receive_logs": "ts-node src/PubSub/receive_logs.ts",
     "emit_logs": "ts-node src/PubSub/emit_log.ts",
     "emit_log_direct": "ts-node src/Routing/emit_log_direct.ts",
-    "receive_logs_direct": "ts-node src/Routing/receive_logs_direct.ts"
+    "receive_logs_direct": "ts-node src/Routing/receive_logs_direct.ts",
+    "receive_log_topic": "ts-node src/Topics/receive_log_topic.ts",
+    "emit_log_topic": "ts-node src/Topics/emit_log_topic.ts"
   },
   "dependencies": {
     "@types/amqplib": "^0.10.7",
