@@ -18,7 +18,9 @@
     "emit_log_direct": "ts-node src/Routing/emit_log_direct.ts",
     "receive_logs_direct": "ts-node src/Routing/receive_logs_direct.ts",
     "receive_log_topic": "ts-node src/Topics/receive_log_topic.ts",
-    "emit_log_topic": "ts-node src/Topics/emit_log_topic.ts"
+    "emit_log_topic": "ts-node src/Topics/emit_log_topic.ts",
+    "rpc_client": "ts-node src/RPC/rpc_client.ts",
+    "rpc_server": "ts-node src/RPC/rpc_server.ts"
   },
   "dependencies": {
     "@types/amqplib": "^0.10.7",
